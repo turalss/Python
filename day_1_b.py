@@ -10,7 +10,7 @@ print(b)
 # 2. Calculate
 
 # 30+*6
-c = (6/100)* 30
+c = (6/100) * 30
 print(c)
 
 # 6^6
@@ -22,6 +22,12 @@ print(d)
 e = 6+6+6+6+6+6
 print(c)
 
+# 3. Print “Hello World” on the console output. Print output “Hello World : 10”
+
+hello_world = 'Hello World'
+print(hello_world + ':10')
+
+
 # 4. Below is a mathematical calculation exercise:
 
 def mortgage_calculator(total_amount, interest, months):
@@ -29,16 +35,8 @@ def mortgage_calculator(total_amount, interest, months):
     monthly_interest = interest/12
     numerator = monthly_interest*((1+monthly_interest)**months)
     denominator = (1 + monthly_interest)**months - 1
-    payment = float("{0:.2f}".format(total_amount * numerator/denominator ))
+    payment = float("{0:.2f}".format(total_amount * numerator/denominator))
     return(payment)
 
+
 print(mortgage_calculator(800000, 6, 103))
-
-
-
-
-
-
-
-
-
