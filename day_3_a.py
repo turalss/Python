@@ -65,3 +65,54 @@ def construct_pattern(number):
 
 
 print(construct_pattern(5))
+
+# 5. Write a Python program that accepts a word from the user and reverse it. Go to the editor
+
+
+def reverse_string():
+    input_data = str(input())
+    return(input_data[::-1])
+
+
+# print(reverse_string())
+
+# 6. Write a Python program to count the number of even and odd numbers from a series of numbers. Go to the editor
+
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+
+def count_odd_and_even_numbers(data):
+    odd = 0
+    even = 0
+    for i in data:
+        if i % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    print('Number of even numbers: ', even)
+    print('Number of odd numbers: ', odd)
+
+
+print(count_odd_and_even_numbers(numbers))
+
+# 7. Write a Python program that prints each item and its corresponding type from the following list.
+# Sample List : datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+
+datalist = [1452, 11.23, 1+2j, True, 'w3resource',
+            (0, -1), [5, 12], {"class": 'V', "section": 'A'}]
+
+for item in datalist:
+    print("Type of ", item, " : ", type(item))
+
+# 8.	Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+# Note : Use 'continue' statement.
+
+
+def print_numbers():
+    for x in range(0, 7):
+        if x == 0 or x == 6:
+            continue
+        print(x)
+
+
+print(print_numbers())
