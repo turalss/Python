@@ -86,3 +86,46 @@ def check_even(*args):
 print(check_even(1, 2, 3))
 
 # 9. Define a function that takes a string and returns a matching string where every even letter is uppercase and every odd letter is lowercase
+
+
+def upper_lower(string):
+    result = ''
+    for i in string:
+        if string.index(i) % 2 == 0:
+            result += i.upper()
+        else:
+            result += i.lower()
+
+    print(result)
+
+
+print(upper_lower('Tural'))
+
+
+# 11.Write a function which takes  two-strings and returns true if both the strings start with the same letter.
+
+def compare_strings_first_char(string1, string2):
+    char1 = string1[0].lower()
+    char2 = string2[0].lower()
+    print(char1, char2)
+    if char1 == char2:
+        return(True)
+
+
+print(compare_strings_first_char('hi', 'Ho'))
+
+# 12. A function that capitalizes first and fourth character of a word in a string.
+
+
+def capitalize_char(string):
+    updated_string = ''
+    for i in string:
+        if string.index(i) == 0 or string.index(i) == 3:
+            updated_string += i.upper()
+        else:
+            updated_string += i
+
+    return(updated_string)
+
+
+print(capitalize_char('tural'))
